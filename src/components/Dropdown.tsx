@@ -8,10 +8,7 @@ export default function Dropdown(){
       } = useFieldPlugin()
     
     return(
-        <select name="countries" id="countries" onChange={(e)=>
-            {   console.log(e.target.value)
-                setContent(e.target.value)}}
-        >
+        <select name="countries" id="countries" onChange={(e)=>{ setContent(e.target.value)}}>
             { Countries.map( country => {
                     return(
                         <option value={country.name}>{country.name}</option>
