@@ -1,6 +1,4 @@
-// import FieldPlugin from './components/FieldPlugin'
-// import FieldPluginExample from './components/FieldPluginExample'
-import Dropdown from './components/Dropdown'
+import DropdownAPI from './components/DropdownAPI'
 import { FunctionComponent } from 'react'
 import { FieldPluginProvider } from '@storyblok/field-plugin/react'
 
@@ -10,8 +8,7 @@ const App: FunctionComponent = () => {
       Loading={Loading}
       Error={Error}
     >
-      {/* <FieldPluginExample /> */}
-      <Dropdown />
+      <DropdownAPI />
     </FieldPluginProvider>
   )
 }
